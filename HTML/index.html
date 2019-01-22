@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML연습</title>
+        <style>
+            body {
+                height : 10000px;
+            }
+            table, tr, td {
+                border : 1px solid darkturquoise;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 여기는 주석입니다. -->
+        <!-- emmet 을 다운받아라 -->
+        <h1 id="heading">heading1</h1>
+        <a href="#a">링크로가기</a>
+        <h1>안녕</h1>
+        <h2>안녕2</h2>
+        <h6>안녕6</h6>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam vel tempore explicabo, illum commodi, ipsa fuga voluptate animi, dolorem hic cupiditate praesentium quis quaerat magnam amet nobis quidem dignissimos!</p>
+        <br>
+        <p><b>위에 작성한 것</b>은 <strong>Lorem Ipsum</strong>으로 임의의 문자열을 나타낸다.</p>
+        <strong>strong 태그와 b태그는 모두 bold 체를 표현합니다.</strong>
+        <em>em= 이탤릭체도 작성가능합니다. p태그로 감싸지 않아서 엔터가 입력이 안되었어요, br도 엔터가능</em><br>
+        <i>i로도 작성 가능해요. 다만, em이 시맨틱한 의미를 가지고 있어요.</i>
+        <p><del>del은 취소선을 나타내요.</del></p>
+        <p><mark>하이라이팅도 가능해요 하이라이팅은 mark입니다. 기본은 노란색</mark></p>
+        <p>log<sub>10</sub>10</p>
+        <p>sub,sup는 글자를 내리거나 올릴 때, 또 예를 들어서 2<sup>3</sup></p>
+        <p>아                                              아!!</p>
+        <p>공백이 한칸이네... 띄어쓰기 여러개는 = 1개 </p>
+        <p>아&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아!!</p>
+        <p>nbsp;를 이용하여 띄어쓰기 여러개 가능..</p>
+        <pre>pre는 어떻게 동작하나요
+            import random
+            random.sample(range(1, 46), 6)
+            띄             어    쓰 기
+            pre내에 있는 문자는 그냥 문자로 인식함.. 띄어쓰기도
+        </pre>
+        <q>안녕하세요, q는 인용문 입니다. 짧을 때 사용하세요</q>
+        <blockquote id="q"> blockquote도 인용문이지만, 긴 문장이에요.
+            이건... 들여쓰기가 기본적으로 적용돼요.
+        </blockquote>
+        <ul>
+            <li>ul은 순서가 없습니다.</li>
+            <li>이재찬</li>
+            <li>박성민</li>
+        </ul>
+        <!-- <ol start="2" reversed> -->
+        <ol type="a" start="2">
+            <li>ol은 순서가 있어요1교시</li>
+            <li>2교시</li>
+            <li>li*6을 입력하면 6개가 생성됨. 컨트롤+알트 누르고 방향키 입력해보세요.</li>
+            <li>li*6을 입력하면 6개가 생성됨. 컨트롤+알트 누르고 방향키 입력해보세요.3교시</li>
+            <li>li*6을 입력하면 6개가 생성됨. 컨트롤+알트 누르고 방향키 입력해보세요.</li>
+            <li>li*6을 입력하면 6개가 생성됨. 컨트롤+알트 누르고 방향키 입력해보세요.</li>
+            <li>li*6을 입력하면 6개가 생성됨. 컨트롤+알트 누르고 방향키 입력해보세요.</li>
+            <li>li*6을 입력하면 6개가 생성됨. 컨트롤+알트 누르고 방향키 입력해보세요.</li>
+        </ol>
+        <q>ul>li*3 따라해보세요</q>
+        <ul>
+            <li style="list-style-type: square">삭와</li>
+            <li>반안아</li>
+            <li>안녕!</li>
+        </ul>
+        <!--링크를 배워보자-->
+        <a href="https://youtube.com">유튜브로 가기</a>
+        <a href="https://youtube.com" target="_blank"> 새탭에서 유튜브로 가기</a>
+        <a href="https://youtube.com" target="_self"> 명시하지 않으면 default 값은 셀프</a>
+        <a href="#heading">상단으로 가기</a>
+        <a href="#q">인용문으로 가기</a>
+        <a href="hello.html" target="_blank">hello,world</a>
+        <a href="templates/test.html">mytest</a>
+        <a href="mailto:t@t.t">메일 보내기</a>
+
+        
+
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Form input</h2>
+        <form action="/">
+            일반텍스트 : <input name="username" type="text" value="홍길동" placeholder="이름써라" autofocus><br>
+            email : <input type="email" placeholder="이메일써라" autocomplete="email"><br>
+            비밀번호 : <input type="password" placeholder="암호써라"><br>
+            날짜 : <input type="date">
+            <input type="hidden" name="hidden" value="이 사람은 바보">
+            <input type="submit" value="전송~"><br>
+            <input type="radio" name="gen" value="male"> 남자 
+            <input type="radio" name="gen" value="female" checked> 여자<br>
+            <input type="checkbox" name="option" value="1">SIA<br>
+            <input type="checkbox" name="option" value="2">QUE<br>
+            <input type="checkbox" name="option" value="3">IE<br>
+            <select>
+                <option value="korea">한국</option>
+                <option value="rusia">러시아</option>
+                <option value="chin" disabled>중국</option>
+                <option value="japs" selected disabled>일본</option><br>
+            </select>
+            <input name="number" type="range" min="0" max="100" step="1">
+        </form>
+
+        <form action="https://google.com/search">
+            검색어 : <input name="q">
+            <input type="submit" value="구글검색"><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rX30YjeTjGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/547472292&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </form>
+    </body>
+</html>

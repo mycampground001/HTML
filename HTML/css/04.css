@@ -1,0 +1,55 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: peru;
+}
+
+.padding-10 {
+    padding : 10px;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.margin-10 {
+    margin: 100px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+    /* right, bottom, left */
+}
+
+.margin-50 {
+    margin: 50px 50px 50px 50px;
+}
+
+.margin-3 {
+    margin: 10px 20px 30px;
+    /* 3개 값을 지정하면 가운데 값이 left,right */
+    /* 2개면 위아래, 좌우 순으로 적용. */
+}
+
+.border {
+    /* border : 2px solid aqua */
+    border-style: groove;
+    border-bottom-style: double;
+    border-top-style: solid;
+    border-left-style: inset;
+    border-bottom-color: aqua;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: brown;
+}
+
+.football {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 15px 75px;
+}
