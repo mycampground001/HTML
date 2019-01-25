@@ -1,0 +1,21 @@
+body {
+    height: 10000px;
+}
+
+h2 {
+    line-height: 500px;
+    color: white
+}
+
+.sticky {
+    width: 100%;
+    height: 10%;
+}
+
+.gg {
+    height:350px;
+}
+
+Header {
+    height:350px;
+}

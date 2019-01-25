@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>영화추천사이트</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="01_layout.css">
+    <link rel="stylesheet" href="2_layout.css">
+
+    <style>
+        .section {
+            height: 500px;
+            background-image: url('pic.jpg');
+            background-size:cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sticky fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>s
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">친구평점보러가기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="sticky fixed-top mt-3 ml-3">
+        <p>영화추천시스템</p>
+    </div>
+    <br><br><br>
+    <div class="section text-center">
+        <h2>당신에게 어울리는 영화를 추천해드립니다.</h2>
+    </div>
+    <br>
+
+
+    <div class="row justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="말모이.jpg" class="card-img-top">
+                
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block">말모이</h5>
+                    <a href="#" class="btn btn-warning d-inline-block">4.95</a>
+                    <hr>
+                    <p class="card-text">드라마</p>
+                    <p class="card-text">개봉일 2019.01.11</p>
+                    <a href="#" class="btn btn-primary">영화정보 보러가기</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="내안의그놈.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block">내안의 그놈</h5>
+                    <a href="#" class="btn btn-secondary d-inline-block">3.11</a>
+                    <hr>
+                    <p class="card-text">판타지</p>
+                    <p class="card-text">개봉일 2019.01.14</p>
+                    <a href="#" class="btn btn-primary">영화정보 보러가기</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="글래스.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block">글래스</h5>
+                    <a href="#" class="btn btn-danger d-inline-block">8.33</a>
+                    <hr>
+                    <p class="card-text">드라마</p>
+                    <p class="card-text">개봉일 2019.01.22</p>
+                    <a href="#" class="btn btn-primary">영화정보 보러가기</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="주먹왕.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block">주먹왕 랄프</h5>
+                    <a href="#" class="btn btn-info d-inline-block">8.11</a>
+                    <hr>
+                    <p class="card-text">애니메이션</p>
+                    <p class="card-text">개봉일 2019.01.11</p>
+                    <a href="#" class="btn btn-primary">영화정보 보러가기</a>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
